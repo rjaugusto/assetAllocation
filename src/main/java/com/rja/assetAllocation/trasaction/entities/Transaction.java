@@ -26,9 +26,13 @@ public class Transaction implements Serializable {
 
 	public BigDecimal price;
 
-	private LocalDate date;
+	public String ticker;
+
+	private LocalDate transactionDate;
 
 	private TransactionType transactionType;
+
+	private AssetType assetType;
 
 	private BigDecimal tax;
 

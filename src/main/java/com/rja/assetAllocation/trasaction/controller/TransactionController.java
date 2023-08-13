@@ -24,6 +24,10 @@ public class TransactionController {
 	@PostMapping
 	public ResponseEntity<Transaction> inclui(@RequestBody Transaction transaction) {
 		System.out.println(transaction.getQuantity());
+		System.out.println(transaction.getPrice());
+		System.out.println(transaction.getTransactionType());
+		System.out.println(transaction.getAssetType());
+		System.out.println(transaction.getTransactionDate());
 		return new ResponseEntity<Transaction>(transaction,HttpStatus.CREATED);
 	}
 	
