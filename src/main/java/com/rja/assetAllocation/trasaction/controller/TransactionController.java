@@ -21,15 +21,17 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class TransactionController {
 	
-	@PostMapping
+	/*@PostMapping
 	public ResponseEntity<Transaction> inclui(@RequestBody Transaction transaction) {
 		System.out.println(transaction.getQuantity());
 		System.out.println(transaction.getPrice());
 		System.out.println(transaction.getTransactionType());
 		System.out.println(transaction.getAssetType());
 		System.out.println(transaction.getTransactionDate());
+		System.out.println(transaction.getTax());
+		System.out.println(transaction.getTicker());
 		return new ResponseEntity<Transaction>(transaction,HttpStatus.CREATED);
-	}
+	}*/
 	
 	@GetMapping
 	public List<Transaction> lista() {

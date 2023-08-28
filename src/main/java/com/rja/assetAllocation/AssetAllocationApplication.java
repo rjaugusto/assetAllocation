@@ -18,7 +18,7 @@ public class AssetAllocationApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/transaction").allowedOrigins("http://localhost:4200");
+				registry.addMapping("/*").allowedOrigins("http://localhost:4200");
 			}
 		};
 	}

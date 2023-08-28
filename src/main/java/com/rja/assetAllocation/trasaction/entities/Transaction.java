@@ -22,22 +22,8 @@ public class Transaction implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	public Long id;
 	
-	public Long quantity;
+	
 
-	public BigDecimal price;
 
-	public String ticker;
-
-	private LocalDate transactionDate;
-
-	private TransactionType transactionType;
-
-	private AssetType assetType;
-
-	private BigDecimal tax;
-
-	@OneToOne
-	@JoinColumn(name = "asset_id")
-	private Asset asset;
 
 }
